@@ -219,8 +219,8 @@ export default class extends Component {
 
     // Default: horizontal
     initState.dir = props.horizontal === false ? 'y' : 'x'
-    initState.width = props.width || width
-    initState.height = props.height || height
+    initState.width = props.width || state.width
+    initState.height = props.height || state.height
 
     this.internals = {
       ...this.internals,
